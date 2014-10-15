@@ -1,0 +1,81 @@
+/* all app scss styles here */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+@import url(http://fonts.googleapis.com/css?family=Questrial|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic|Libre+Baskerville:400,700,400italic|Great+Vibes|Oswald:400,300,700|Montserrat:400,700|Lobster+Two:400,400italic,700,700italic|Sanchez:400italic,400|Bevan|Poly:400,400italic);
+$orange: #b2232d;
+
+
+body#home {
+	> header {
+		@include clearfix();
+		height: 100vh;
+    position: relative;
+
+    > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 1000;
+      color: #fff;
+      font-size: rem-calc(50);
+      @include grid-column(4, $offset: 7);
+      line-height: 1.4em;
+
+      @media #{$large-up} {
+        font-size: rem-calc(100);
+        
+      }
+
+      > span {
+        background: $orange;
+        padding: 0;
+        box-shadow:40px 0 0 $orange, -30px 0 0 $orange;
+        box-decoration-break: clone;
+
+        @media #{$large-up} {
+          box-shadow:80px 0 0 $orange, -60px 0 0 $orange;
+        }
+
+        &:first-of-type {
+          margin-left: -90px;
+        }
+      }
+    }
+
+		> div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+			background-size: cover;
+	  	background-position: top center;
+			background-repeat: no-repeat;
+      background-attachment: fixed;
+		}
+
+		#max-color {
+      z-index: -4;
+			background-image: url(/images/main-max.jpg);
+		}
+		#max-bw {
+      z-index: -3;
+      background-image: url(/images/main-max-bw.jpg);
+      display: none;
+		}
+		#overlay {
+      z-index: -2;
+      background-color: rgba(0,0,0,1);
+      display: none;
+		}
+		#max-cutout {
+      z-index: -1;
+      background-image: url(/images/main-max-cutout.png);
+		}
+	}
+  #more-info {
+    height: 300vh;
+  }
+}
