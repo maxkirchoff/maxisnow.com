@@ -8286,7 +8286,7 @@ body#home nav#navigation {
     display: none;
     padding-left: 0;
     padding-right: 0;
-    width: 16.66667%;
+    width: 8.33333%;
     float: left;
     margin-left: 8.33333% !important;
   }
@@ -8312,6 +8312,51 @@ body#home nav#navigation ul li a:hover:after {
   font-size: 0.625rem;
   margin-left: 0.3125rem;
   color: #efefef;
+}
+body#home aside.social {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: white;
+  padding: 0.625rem 0;
+}
+@media only screen and (min-width: 64.063em) {
+  body#home aside.social {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+  }
+}
+body#home aside.social a {
+  padding-left: 0;
+  padding-right: 0;
+  width: 20%;
+  float: left;
+  text-align: center;
+  color: white;
+  font-size: 1.5625rem;
+}
+@media only screen and (min-width: 64.063em) {
+  body#home aside.social a {
+    margin: 0.3125rem 0.3125rem;
+    padding: 5px;
+    width: 30px;
+  }
+}
+body#home aside.social a.github {
+  color: #4183c4;
+}
+body#home aside.social a.facebook {
+  color: #3B5998;
+}
+body#home aside.social a.twitter {
+  color: #4099FF;
+}
+body#home aside.social a.instagram {
+  color: #517fa4;
+}
+body#home aside.social a.linkedin {
+  color: #007bb6;
 }
 body#home #sections {
   overflow: hidden;
@@ -8500,53 +8545,161 @@ body#home #sections #other-details .details .detail {
   background: transparent;
 }
 
-.connections {
-  display: block;
-  padding: 0;
-  margin: 0 -0.9375rem;
-  overflow: hidden;
-  *zoom: 1;
+.reveal-modal, dialog {
+  max-width: 400px;
+  background-color: #b2232d;
+  color: white;
 }
-.connections > li {
-  display: block;
-  height: auto;
-  float: left;
-  padding: 0 0.9375rem 1.875rem;
+.reveal-modal h1, dialog h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 200;
+  margin-bottom: 1.25rem;
+  margin-left: 40px;
 }
-.connections > li {
-  width: 100%;
-  padding: 0 0.9375rem 1.875rem;
-  list-style: none;
+.reveal-modal p, dialog p {
+  font-weight: 200;
+  margin-left: 40px;
 }
-.connections > li:nth-of-type(1n) {
-  clear: none;
+.reveal-modal p a, dialog p a {
+  color: white;
+  text-decoration: underline;
 }
-.connections > li:nth-of-type(1n+1) {
-  clear: both;
+.reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
+  line-height: 0.8em;
 }
-@media only screen and (min-width: 64.063em) {
-  .connections {
-    display: block;
-    padding: 0;
-    margin: 0 -0.9375rem;
-    overflow: hidden;
-    *zoom: 1;
+
+.print {
+  display: none;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
   }
-  .connections > li {
-    display: block;
-    height: auto;
+
+  body > * {
+    display: none;
+  }
+
+  body#home {
+    padding-left: 0;
+    padding-right: 0;
+    width: 83.33333%;
     float: left;
-    padding: 0 0.9375rem 1.875rem;
+    margin-left: 8.33333% !important;
   }
-  .connections > li {
-    width: 50%;
-    padding: 0 0.9375rem 1.875rem;
-    list-style: none;
+  body#home header {
+    height: auto;
+    display: block;
   }
-  .connections > li:nth-of-type(1n) {
-    clear: none;
+  body#home header h1 {
+    margin: 0 !important;
+    font-size: 2.5rem;
+    width: 100%;
   }
-  .connections > li:nth-of-type(2n+1) {
-    clear: both;
+  body#home header h1 br {
+    display: none;
+  }
+  body#home header h1 > span {
+    margin: 0 !important;
+    display: inline;
+  }
+  body#home header h1 > span:first-of-type:after {
+    content: " ";
+  }
+  body#home .print {
+    display: block;
+  }
+  body#home .contact-details {
+    font-size: 0.875rem;
+    float: right;
+    text-align: right;
+  }
+  body#home #sections {
+    display: block;
+  }
+  body#home #sections #summary {
+    display: none;
+  }
+  body#home #sections #projects, body#home #sections #experience {
+    border-top: 1px solid #999;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  body#home #sections #projects > h1, body#home #sections #experience > h1 {
+    font-size: 1.375rem;
+    margin: 0;
+    padding: 0;
+  }
+  body#home #sections #projects .projects, body#home #sections #experience .projects {
+    margin-top: 0.625rem;
+  }
+  body#home #sections #projects .projects .project, body#home #sections #experience .projects .project {
+    padding: 0;
+    margin: 0;
+    line-height: 1.1em;
+  }
+  body#home #sections #projects .projects .project:nth-of-type(n+4), body#home #sections #experience .projects .project:nth-of-type(n+4) {
+    display: none;
+  }
+  body#home #sections #projects .projects .project a, body#home #sections #experience .projects .project a {
+    text-decoration: none;
+  }
+  body#home #sections #projects .projects .project img, body#home #sections #experience .projects .project img {
+    display: none;
+  }
+  body#home #sections #projects .projects .project h2, body#home #sections #experience .projects .project h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline;
+  }
+  body#home #sections #projects .projects .project p, body#home #sections #experience .projects .project p {
+    display: inline;
+    font-size: 0.75rem !important;
+    line-height: 1em;
+  }
+  body#home #sections #projects .projects .project p:nth-of-type(n+2), body#home #sections #experience .projects .project p:nth-of-type(n+2) {
+    display: none;
+  }
+  body#home #sections #projects .employment-items .employment-item, body#home #sections #experience .employment-items .employment-item {
+    margin: 0;
+    padding: 0.3125rem 0 0 0;
+  }
+  body#home #sections #projects .employment-items .employment-item h2, body#home #sections #experience .employment-items .employment-item h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  body#home #sections #projects .employment-items .employment-item p, body#home #sections #projects .employment-items .employment-item ul li, body#home #sections #experience .employment-items .employment-item p, body#home #sections #experience .employment-items .employment-item ul li {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  body#home #sections #projects .employment-items .employment-item:nth-of-type(n+4), body#home #sections #experience .employment-items .employment-item:nth-of-type(n+4) {
+    display: none;
+  }
+  body#home #sections #other-details .detail:nth-of-type(n+3) {
+    display: none;
+  }
+  body#home #sections #other-details h1 {
+    display: none;
+  }
+  body#home #sections #other-details li {
+    border-top: 1px solid #999;
+    margin: 0;
+    padding: 0;
+  }
+  body#home #sections #other-details h2 {
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+  }
+  body#home #sections #other-details p {
+    font-size: 0.75rem;
+  }
+  body#home #sections #photography {
+    display: none;
   }
 }

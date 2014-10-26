@@ -65,7 +65,13 @@ module.exports = function(grunt) {
 					cwd:'<%= app %>/',
 					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
 					dest: '<%= dist %>/'
-				}]
+				} , {
+					expand: true,
+					flatten: true,
+					src: ['<%= app %>/bower_components/font-awesome/fonts/**'],
+					dest: '<%= dist %>/fonts/',
+					filter: 'isFile'
+				} ]
 			},
 		},
 
@@ -152,6 +158,7 @@ module.exports = function(grunt) {
 				],
 				exclude: [
 					'modernizr',
+					'font-awesome',
 					'jquery-placeholder',
 					'jquery.cookie',
 					'foundation'

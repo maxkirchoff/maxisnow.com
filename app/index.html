@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Kirchoff - Techno-philosopher, hacker, and photography enthusiast. Freshly fascinated by UX and how to build better things</title>
     <!-- build:css css/libraries.min.css-->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css-->
     <!-- endbower-->
     <!-- endbuild-->
@@ -21,23 +22,23 @@
     <div id="logo"><span class="m">M</span><span class="k">K</span></div>
     <header>
       <h1> <span><span class="m">M</span>ax</span><br><span><span class="k">K</span>irchoff</span></h1>
+      <div class="print contact-details">(415) 985-5648 | max@maxisnow.com <br /> github.com/maxkirchoff | maxisnow.com</div>
       <div id="max-cutout"></div>
       <div id="overlay"></div>
       <div id="max-bg"></div><a id="downer" href="javascript">click to scroll</a>
     </header>
     <nav id="navigation">
       <ul>
-        <li><a href="javascript;">Home</a></li>
-        <li><a href="javascript;">Blog</a></li>
-        <li><a href="javascript;">Resume</a></li>
-        <li><a href="#" data-reveal-id="contact-popup">Social</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" data-reveal-id="blog">Blog</a></li>
+        <li><a href="javascript:window.print();">Resume</a></li>
         <li><a href="#" data-reveal-id="contact-popup">Contact</a></li>
-        <li><i class="fi-github" style="color:black"></i></li>
       </ul>
     </nav>
+    <aside class="social"><a class="fa fa-github github"></a><a class="fa fa-facebook facebook"></a><a class="fa fa-twitter twitter"></a><a class="fa fa-instagram instagram"></a><a class="fa fa-linkedin linkedin"></a></aside>
     <div id="sections">
       <section id="summary">
-        <p>Starting my <i class="fi-social-github" style="color:black"></i>career in web development, I've worked across a span of engineering and project management duties. I am strong in cross-functional roles where I can provide insights and mentoring to junior people and clear communication with peers and seniors. Working through major features and smaller projects, I'm comfortable developing relationships with stake-holders to ease scope-creep and help provide understanding of technical details. I've also worked with complex projects, guiding with processes and methodologies from KanBan, Agile, Lean, and others. Over the past few years I have been developing my knowledge around product development and strategy, focusing on User Experience and leveraging analytics to make data driven decisions that users care about. I have served as both a lead engineer and a development director, deriving my leadership from my experience and credibility, rather than blind authority.</p>
+        <p>Starting my career in web development, I've worked across a span of engineering and project management duties. I am strong in cross-functional roles where I can provide insights and mentoring to junior people and clear communication with peers and seniors. Working through major features and smaller projects, I'm comfortable developing relationships with stake-holders to ease scope-creep and help provide understanding of technical details. I've also worked with complex projects, guiding with processes and methodologies from KanBan, Agile, Lean, and others. Over the past few years I have been developing my knowledge around product development and strategy, focusing on User Experience and leveraging analytics to make data driven decisions that users care about. I have served as both a lead engineer and a development director, deriving my leadership from my experience and credibility, rather than blind authority.</p>
       </section>
       <section id="projects">
         <h1>Projects</h1>
@@ -185,24 +186,13 @@
       </section>
     </div>
     <aside id="contact-popup" data-reveal class="reveal-modal">
-      <ul class="connections">
-        <li class="connection">
-          <h2>Contact</h2>
-          <ul>
-            <li>Send me an email <a href='mailto:max@maxisnow.com'>max@maxisnow.com</a></li>
-            <li>Give me a call (415) 985-5648</li>
-          </ul>
-        </li>
-        <li class="connection">
-          <h2>Social</h2>
-          <ul>
-            <li>GitHub</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
-          </ul>
-        </li>
-      </ul><a class="close-reveal-modal">&#215;</a>
+      <h1>Contact Max</h1>
+      <p>Send me an email <br /><a href='mailto:max@maxisnow.com'>max@maxisnow.com</a></p>
+      <p>Give me a call <br />(415) 985-5648</p><a class="close-reveal-modal">&#215;</a>
+    </aside>
+    <aside id="blog" data-reveal class="reveal-modal">
+      <h1>Not Ready Yet!</h1>
+      <p>Sorry, but the blog isn't complete.</p><a class="close-reveal-modal">&#215;</a>
     </aside>
     <!-- build:js js/vendor/libraries.min.js-->
     <!-- bower:js-->

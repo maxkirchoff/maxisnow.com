@@ -212,7 +212,7 @@ body#home {
     @media #{$large-up} {
       position:fixed;
       display: none;
-      @include grid-column(2, $offset: 1);
+      @include grid-column(1, $offset: 1);
     }
 
     ul {
@@ -239,6 +239,44 @@ body#home {
             color: #efefef;
           }
         }
+      }
+    }
+  }
+  aside.social {
+    @include clearfix();
+    background-color: $white;
+    padding: rem-calc(10) 0;
+    @media #{$large-up} {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
+    }
+    a {
+      @include grid-column(2.4);
+      text-align: center;
+      @media #{$large-up} {
+        margin: rem-calc(5) rem-calc(5);
+        padding: 5px;
+        width: 30px;
+      }
+      color: $white;
+      font-size: rem-calc(25);
+
+      &.github {
+        color: #4183c4;
+      }
+      &.facebook {
+        color: #3B5998;
+      }
+      &.twitter {
+        color: #4099FF;
+      }
+      &.instagram {
+        color: #517fa4;
+      }
+      &.linkedin {
+        color: #007bb6;
       }
     }
   }
@@ -379,9 +417,157 @@ body#home {
   }
 }
 
-.connections {
-  @include block-grid(1);
-  @media #{$large-up} {
-    @include block-grid(2);
+.reveal-modal {
+  max-width: 400px;
+  background-color: $orange;
+  color: $white;
+  h1 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem-calc(28);
+    font-weight: 200;
+    margin-bottom: rem-calc(20);
+    margin-left: 40px;
+  }
+  p {
+    font-weight: 200;
+    margin-left: 40px;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  .close-reveal-modal {
+    line-height: 0.8em;
+  }
+}
+.print {
+  display: none;
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  body > * {
+    display: none;
+  }
+  body#home {
+    @include grid-column(10, $offset: 1);
+    header {
+      height: auto;
+      display: block;
+      h1 {
+        margin: 0 !important;
+        font-size: rem-calc(40);
+        width: 100%;
+        br {
+          display: none;
+        }
+        > span {
+          margin: 0 !important;
+          display: inline;
+
+          &:first-of-type:after {
+            content: " ";
+          }
+        }
+      }
+    }
+    .print {
+      display: block;
+    }
+    .contact-details {
+      font-size: rem-calc(14);
+      float: right;
+      text-align: right;
+    }
+    #sections {
+      display: block;
+      #summary {
+        display: none;
+      }
+      #projects, #experience {
+        border-top: 1px solid #999;
+        margin: 0;
+        padding: 0;
+        display: block;
+        > h1 {
+          font-size: rem-calc(22);
+          margin: 0;
+          padding: 0;
+        }
+        .projects {
+          margin-top: rem-calc(10);
+          .project {
+            padding: 0;
+            margin: 0;
+            line-height: 1.1em;
+            &:nth-of-type(n+4) {
+              display: none;
+            }
+            a {
+              text-decoration: none;
+            }
+            img {
+              display: none;
+            }
+            h2 {
+              font-size: rem-calc(12);
+              font-weight: 600;
+              display: inline;
+            }
+            p {
+              display: inline;
+              font-size: rem-calc(12) !important;
+              line-height: 1em;
+              &:nth-of-type(n+2) {
+                display: none;
+              }
+            }
+          }
+        }
+        .employment-items .employment-item {
+          margin: 0;
+          padding: rem-calc(5) 0 0 0;
+          h2 {
+            font-size: rem-calc(16);
+            margin: 0;
+          }
+          p, ul li {
+            font-size: rem-calc(12);
+            margin: 0;
+          }
+          &:nth-of-type(n+4) {
+            display: none;
+          }
+        }
+      }
+      #other-details {
+        .detail:nth-of-type(n+3) {
+          display: none;
+        }
+        h1 {
+          display: none;
+        }
+        li {
+          border-top: 1px solid #999;
+          margin: 0;
+          padding: 0;
+        }
+        h2 {
+          font-size: rem-calc(22);
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 0;
+        }
+        p {
+          font-size: rem-calc(12);
+        }
+      }
+      #photography {
+        display: none;
+      }
+    }
   }
 }

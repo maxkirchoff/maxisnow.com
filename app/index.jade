@@ -15,6 +15,7 @@ html(class="no-js", lang="en")
                 span
                     span(class="k") K
                     |irchoff
+            div(class="print contact-details") (415) 985-5648 | max@maxisnow.com <br /> github.com/maxkirchoff | maxisnow.com
             div(id="max-cutout")
             div(id="overlay")
             div(id="max-bg")
@@ -22,19 +23,22 @@ html(class="no-js", lang="en")
         nav(id='navigation')
             ul
                 li
-                    a(href="javascript;") Home
+                    a(href="#") Home
                 li
-                    a(href="javascript;") Blog
+                    a(href="#", data-reveal-id="blog") Blog
                 li
-                    a(href="javascript;") Resume
-                li
-                    a(href="#", data-reveal-id="contact-popup") Social
+                    a(href="javascript:window.print();") Resume
                 li
                     a(href="#", data-reveal-id="contact-popup") Contact
-                li <i class="fi-github" style="color:black"></i>
+        aside(class='social')
+            a(class="fa fa-github github")
+            a(class="fa fa-facebook facebook")
+            a(class="fa fa-twitter twitter")
+            a(class="fa fa-instagram instagram")
+            a(class="fa fa-linkedin linkedin")
         div(id="sections")
             section(id="summary")
-                p Starting my <i class="fi-social-github" style="color:black"></i>career in web development, I've worked across a span of engineering and project management duties. I am strong in cross-functional roles where I can provide insights and mentoring to junior people and clear communication with peers and seniors. Working through major features and smaller projects, I'm comfortable developing relationships with stake-holders to ease scope-creep and help provide understanding of technical details. I've also worked with complex projects, guiding with processes and methodologies from KanBan, Agile, Lean, and others. Over the past few years I have been developing my knowledge around product development and strategy, focusing on User Experience and leveraging analytics to make data driven decisions that users care about. I have served as both a lead engineer and a development director, deriving my leadership from my experience and credibility, rather than blind authority.
+                p Starting my career in web development, I've worked across a span of engineering and project management duties. I am strong in cross-functional roles where I can provide insights and mentoring to junior people and clear communication with peers and seniors. Working through major features and smaller projects, I'm comfortable developing relationships with stake-holders to ease scope-creep and help provide understanding of technical details. I've also worked with complex projects, guiding with processes and methodologies from KanBan, Agile, Lean, and others. Over the past few years I have been developing my knowledge around product development and strategy, focusing on User Experience and leveraging analytics to make data driven decisions that users care about. I have served as both a lead engineer and a development director, deriving my leadership from my experience and credibility, rather than blind authority.
             section(id="projects")
                 h1 Projects
                 ul(class='projects', data-equalizer)
@@ -176,18 +180,12 @@ html(class="no-js", lang="en")
                         a(href="http://sfcranes.tumblr.com", target="_blank")
                             img(src="/images/photography/crane.jpg")
         aside(id='contact-popup', class="reveal-modal", data-reveal)
-            ul(class='connections')
-                li(class='connection')
-                    h2 Contact
-                    ul
-                        li Send me an email <a href='mailto:max@maxisnow.com'>max@maxisnow.com</a>
-                        li Give me a call (415) 985-5648
-                li(class='connection')
-                    h2 Social
-                    ul
-                        li GitHub
-                        li Twitter
-                        li Instagram
-                        li LinkedIn
+            h1 Contact Max
+            p Send me an email <br /><a href='mailto:max@maxisnow.com'>max@maxisnow.com</a>
+            p Give me a call <br />(415) 985-5648
+            a(class="close-reveal-modal") &#215;
+        aside(id='blog', class="reveal-modal", data-reveal)
+            h1 Not Ready Yet!
+            p Sorry, but the blog isn't complete.
             a(class="close-reveal-modal") &#215;
         include footer
