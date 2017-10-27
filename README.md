@@ -1,3 +1,2 @@
-## zf5_project
-
-(place your readme here)
+# maxisnow.com
+Maximillian Kirchoff's resume and info
