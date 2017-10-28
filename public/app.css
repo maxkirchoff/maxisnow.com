@@ -23,7 +23,7 @@ header {
 		position: relative;
 }
 
-h1 {
+header h1 {
 	text-transform: uppercase;
 	position: absolute;
 	top: 0;
@@ -96,7 +96,7 @@ footer {
 		float: right;
 		max-width: 60%;
 	}
-	h1 {
+	header h1 {
 		text-align: right;
 		font-size: 8vw;
 		margin-right: -0.7vw;
