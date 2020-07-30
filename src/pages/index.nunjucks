@@ -1,0 +1,40 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'home' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  <section id="main">
+		<h2><span class="highlighter">About</span></h2>
+		<p>
+			I am a multidisciplinary creative, technologist and thinker. This is a fancy way of saying that I enjoy building cool stuff as much as I enjoy talking about it. My expertise crosses many fields and domains as does my approach to understanding. I am deeply interested in emotional intelligence and our relationship to technology — and how it influences our ethics & the future of the human experience.
+		</p>
+		<p>
+			I live in Austin, TX with my wife and our dog.
+		</p>
+		<p>
+			I am also <span class="red">red</span>-<span class="green">green</span> colorblind.
+		</p>
+    <h2><span class="highlighter">Work</span></h2>
+    <h3>Wild Feelings</h3>
+		<p>
+			I'm part of the founding team at Wild Feelings, a start-up for individuals to learn how your emotions work and why that matters. We are creating a path to emotional intelligence for future leaders. Find out more at <a href="http://wildfeelings.com">WildFeelings.co</a>.
+		</p>
+    <h3>LAMA SIX</h3>
+		<p>
+			Isla Murray and I formed a creative studio called LAMA SIX. We specialize in executing bold, new ideas and developing the brand and visual identities of exciting products and services. Reach out and see our work at <a href="http://lamasix.com">LamaSix.com</a>.
+		</p>
+    <h2><span class="highlighter">Podcast</span></h2>
+		<p>
+			I launched a podcast with my creative partner, Isla Murray, called People Not Things as part of our search to find others who wanted to look at the people and relationships behind everything. You can find our podcast wherever you listen to podcasts or at <a href="http://peoplenotthings.party/">PeopleNotThings.party</a>.
+		</p>
+		<h2><span class="highlighter">Speaking</span></h2>
+		<p>
+			I would love to speak at your event. I have spoken on, written about and prepared content on emotional intelligence for creative leaders, philosophy & technology, human-centered design, empathy, collaboration and other topics that are great for product groups, entrepreneurs and students. Please contact me for details at <a href="mailto:max@lamasix.com">max@lamasix.com</a>.
+		</p>
+
+	</section>
+
+{% endblock %}

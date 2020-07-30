@@ -104,9 +104,17 @@ footer {
 		margin-top: 2vw;
 	}
 
+	h3 {
+		margin: 1em 0 .25em;
+	}
+
+	h3 + p {
+		margin-top: 0.5em;
+	}
+
 	h2 {
 		font-size: 4vw;
-		margin: 1.5em 0 0.5em;
+		margin: 1em 0 0.5em;
 	}
 
 	span.highlighter:after {
