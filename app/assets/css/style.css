@@ -629,7 +629,12 @@ a:hover, a:visited, a:active {
   color: red; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
+  @media (max-width: 1000px) {
+    img {
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1); } }
 
 header {
   position: relative; }

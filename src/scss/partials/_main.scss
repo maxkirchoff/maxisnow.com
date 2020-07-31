@@ -17,6 +17,13 @@ a:hover, a:visited, a:active {
 
 img {
 	width: 100%;
+	display: block;
+
+	
+  @media (max-width: 1000px) {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+  }
 }
 
 header {
