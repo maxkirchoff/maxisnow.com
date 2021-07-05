@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -618,8 +619,10 @@ textarea {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+body, p {
+  font-size: 14px; }
+
 p {
-  font-size: 14px;
   line-height: 1.4em; }
 
 a {
@@ -628,18 +631,29 @@ a {
 a:hover, a:visited, a:active {
   color: red; }
 
+section#main article .image.hero .credit {
+  font-size: 1.5vw; }
+
+section#main article .byline {
+  font-style: italic; }
+
 img {
   width: 100%;
   display: block; }
-  @media (max-width: 1000px) {
-    img {
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1); } }
 
 header {
   position: relative; }
+  header h1 {
+    font-size: 5vw;
+    text-align: center; }
+    header h1 a {
+      text-decoration: none;
+      color: #000 !important; }
+      header h1 a:before {
+        content: "⬅ Back to "; }
 
-header h1 {
+body#home header h1 {
+  text-align: left;
   text-transform: uppercase;
   position: absolute;
   top: 0;
@@ -649,9 +663,23 @@ header h1 {
   font-size: 10vw;
   margin-left: -0.7vw; }
 
-h2 {
+@media (max-width: 1000px) {
+  body#home img {
+    -ms-transform: scaleX(-1);
+        transform: scaleX(-1); } }
+
+body#home h2 {
   font-size: 10vw;
   margin: 1.5em 0 0.5em; }
+
+.articles .article {
+  margin: 2em 0; }
+  .articles .article a {
+    color: #000; }
+    .articles .article a:hover {
+      text-decoration: none; }
+  .articles .article h3 a {
+    text-decoration: none; }
 
 h2:first-of-type {
   margin-top: 0.5em; }
@@ -688,8 +716,7 @@ span.highlighter:after {
   padding: 5px 20px; }
 
 footer {
-  text-align: center;
-  margin-top: 50px; }
+  text-align: center; }
 
 #copyright {
   margin: 30px 0 10px;
@@ -698,9 +725,19 @@ footer {
 /* Break it down girl! */
 @media (min-width: 1000px) {
   header {
+    margin: 20px auto;
+    max-width: 1200px; }
+    header h1 {
+      font-size: 1.4em;
+      text-align: left; }
+  body#home header {
+    margin-top: 0;
     float: right;
-    max-width: 60%; }
-  header h1 {
+    max-width: 60%;
+    position: fixed;
+    right: 0;
+    top: 0; }
+  body#home header h1 {
     text-align: right;
     font-size: 7vw;
     margin-right: -0.7vw;
@@ -711,12 +748,31 @@ footer {
   h3 + p {
     margin-top: 0.5em; }
   h2 {
+    font-size: 40px; }
+  body#home h2 {
     font-size: 4vw;
     margin: 1em 0 0.5em; }
+  section#main {
+    max-width: 1200px;
+    margin: 0 auto; }
+    section#main article {
+      padding: 0 200px; }
+      section#main article .image.hero {
+        margin: 0 -200px 50px; }
+        section#main article .image.hero .credit {
+          font-size: 10px; }
+      section#main article .meta {
+        margin-bottom: 1em; }
+      section#main article h3 {
+        font-size: 26px;
+        margin: 1em 0; }
+      section#main article h4 {
+        font-size: 20px;
+        margin: 1em 0 0.8em; }
   span.highlighter:after {
     bottom: 1.2vw;
     height: 1.2vw; }
-  section {
+  body#home section {
     margin: 0 5%;
     float: left;
     width: 30%; }

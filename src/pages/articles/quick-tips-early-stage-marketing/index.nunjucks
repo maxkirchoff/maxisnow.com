@@ -1,0 +1,43 @@
+<!-- product-manaagement-technical-debt.nunjucks -->
+
+{% set pageID = 'article' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <section id="main">
+        <article>
+            <div class="hero image">
+                <img src="/assets/img/articles/woman-typing.jpeg">
+                <div class="credit">Photo by CoWomen on Unsplash
+</div>
+            </div>
+            <h2>Quick tips for a consulting business on early stage marketing</h2>
+            <div class="meta">
+                <div class="byline">By Maximillian Kirchoff</div>
+                <div class="published">Published on November 18, 2019</div>
+            </div>
+            <div class="content">
+                <p>I occasionally get emails from folks who have found me or <a href="http://lamasix.com/" target="_blank">LAMA SIX</a> who really just need some good advice. I’ll write them a quick email and try to save them time and money with actionable answers and ideas. This is one of those emails that I wanted to share, along with my responses for anyone who might be asking the same questions about their business right now.</p>
+                <p><i>"Hello Max! I got your email from the Xoogler network and was hoping to get some advice from you. I recently started a consulting business. So far, I’ve been driving traffic through my blog’s articles & LinkedIn, but I want to get more bookings. I have a target of 1–3 booked sessions a day."</i></p>
+                <p>The Xoogler network is a collection of former Google employees, founded by Chris Fong. It’s a really great resource to me, and I’m happy to help fellow Xooglers as they’ve broke out to build their own businesses. The person went on to ask 4 questions that I’ve included below. Their questions are in bold-italic and my answers are below each.</p>
+                <p><strong><i>Not sure how to go about achieving my target of 1–3 sessions a day. How do I advertise my site and get more people to book a session? I tried Google & FB ads but got no conversions.</strong></i></p>
+                
+                <p>That kind of digital advertising is probably a bad strategy for you at this time. If you think about the <a href="https://en.wikipedia.org/wiki/Diffusion_of_innovations" target="_blank">“Diffusion of innovations” graph</a>, almost always digital ads are for the “early majority” and “late majority” audiences and phase of an idea spreading. I’m gonna guess you’re in the “innovators” or “early adopters” phase — people who are curious about your offering without knowing a lot about you. This is good because it means the people you do meet with are generally excited about it and can give you good feedback — it’s just bad for advertising as the idea behind it isn’t quite “big enough” yet for them to be comfortable clicking an ad. In my experience your best bet at this phase would be to continue organic networking, and to create marketing moments where you can share what the offering is about within smaller communities. This is stuff like speaking at events, appearing on podcasts (or starting a podcast even), actively participating in online communities or starting an online community around your idea.</p>
+                <p>Basically, getting out there and sharing good info with people to build the foundation of your consulting business. Of all these, you’d want to find audiences and communities that share a strong overlap with your ideal customers, so that you can build a reputation and a following that aligns who you want to be serving with your business. I’ve heard this time and time again from people with big YouTube channels, social marketing channels or popular consulting businesses, it’s all built on hours and hours of interacting with individuals — commenting, responding, advising, and just being yourself. We all want that “magic bullet” where we can suddenly get thousands of customers asking for our help, but that takes a long time and a lot of conversations to get there. So yea, try small communities and speaking/podcasting — add those to the articles and content you’ve already got to create an even more compelling story.</p>
+                <p><strong><i>I have two domains XXXXX.com and YYYYY.co. Both point to the same webpage. I am building a new, professional looking site ZZZZ.com. How do I strategize and use all these domains effectively?</i></strong></p>
+                <p>I love the ZZZZ.com site and the others as well. I think all your websites are telling good stories right now. I’d actually say, just keep those going and spend more time on how you can get people to those websites.</p>
+                <p><strong><i>Should I make this a personal brand considering I am a little embarrassed about being the focus of attention?</i></strong></p>
+                <p>I think that’s really more about what your audience responds to. Do they like the idea of this being a company that’s bigger than any one person — or do they like to think “I know that person, she’s great”? Your answer is in what they think of you as — personal brand vs product/company brand.</p>
+                <p><strong><i>Should I change my pricing? Right now its $XX an hour. I also go over by 10–15 mins every time with no additional charge.</i></strong></p>
+                <p>It’s really hard to say without understanding the value you provide. I’m guessing for some people the value is very high, and others it may seem not worth it. For me, I think the price shouldn’t be “how low can I make this so more people buy it?” but “how do I price this so only people who get value out of it will buy it?” Think about how luxury cars are priced. If you tried to make a Rolls Royce as affordable as possible, you’d end up with “bargain buyers” who would inevitably be unhappy with the car as it’s expensive to fix and very hard to find mechanics for. But if you price it high, you end up with only the people who really want the status of owning a Rolls Royce and to demonstrate wealth — they will probably NEVER complain about the cost as that would undermine their expression of carefree wealth.</p>
+                <p>Rolls Royce has WAY fewer customers than Ford or Chevrolet — but their customers are fans who spend a TON of money on the cars. I’m pretty sure you don’t want to be the Rolls Royce of your consulting, but you also don’t want to lower your price just to have customers who won’t find value in what you provide. I’d ask your previous customers who have raved about you, your super fans, if they thought it was a good value. If not, adjust down, if so, keep it or maybe increase it a bit. There are big books on pricing strategy for a reason, but hopefully this helps.</p>
+                <p>----------</p>
+                <p>The advisee let me know that they got some good thoughts out of this, and I hope you did too. Questions 1 and 4 are actually topics in a number of good books. Two I’d recommend off the top of my bookshelf are <a href="https://www.amazon.com/What-Charge-Strategies-Freelancers-Consultants/dp/143276764X" target="_blank">What to Charge</a> and <a href="https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830" target="_blank">This Is Marketing</a>.</p>
+            </div>
+        </article>
+
+
+    </section>
+
+{% endblock %}

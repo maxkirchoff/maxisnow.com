@@ -1,0 +1,53 @@
+<!-- product-manaagement-technical-debt.nunjucks -->
+
+{% set pageID = 'article' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <section id="main">
+        <article>
+            <div class="hero image">
+                <img src="/assets/img/articles/wires.jpeg">
+                <div class="credit">Photo by Tim Mossholder on Unsplash</div>
+            </div>
+            <h2>Product Management & Technical Debt</h2>
+            <div class="meta">
+                <div class="byline">By Maximillian Kirchoff</div>
+                <div class="published">Published on May 17, 2021</div>
+            </div>
+            <div class="content">
+                <p>Technical debt is often a topic that can lead to debate and miscommunication as it’s generally misunderstood in many industries, especially in tech and the *tech subdivisions (fintech, insurtech, etc). Within computer science, there is plenty of writing on the topic of technical debt: how to classify it, how to measure it, how to avoid it, and how to pay it down. However, I want to present it as a concept for the whole business to consider. I’m always open to discussion, comments, concerns and questions – so please comment on this doc, or contact me directly if any come up.</p>
+                <h3>Is Technical Debt Bad?</h3>
+                <p>No. Technical debt is much more nuanced. Consider financial debt in the same way, there’s no good and bad category of debt. Credit cards, mortgages, loans, etc are financial tools, and can all be used in ways that have great return. However, a specific instance of some form of debt might be considered bad, like using a personal loan to buy $50,000 of <a href="https://fortune.com/2015/03/11/beanie-babies-failure-lessons/#:~:text=Today%2C%20surviving%20Beanie%20Babies%20are,than%20%2410%20are%20extremely%20low." target="_blank">Beanie Babies right before The Great Beanie Baby Collapse</a>. Moral essentialism, our simplification of an idea to "good" or "bad", limits a full understanding and impacts our ability to innovate.</p>
+                <p>To try and make this nuance something a bit more tangible, you can break down the kinds of technical debt we deal in two ways, creating a technical debt matrix. The two axis are “Strategic vs Impulsive” and “Managed vs Unknown”.</p>
+                <h3>Strategic vs Impulsive</h3>
+                <p><strong>We can create technical debt for a purpose or on accident, as a byproduct of poor planning and execution.</strong></p>
+                <p>Strategic technical debt means that we have enough information to decide that the value we get now from the debt is greater than the cost or risk will be later. A very early stage startup should be able to assume lots of technical debt as their immediate value of proving their hypotheses is much more important than what the debt will cost them later. Conversely, if a tech giant wants to launch a new product, tech debt is much more expensive to them than “quick wins” as the eco-system of their technology and products are much more complicated and their relationship to their hard-earned users is more delicate. Launching an ill-conceived new app could also damage their market share or investor trust.</p>
+                <p>Impulsive technical debt is unplanned and uninformed, and is generally created without a reason. This would be the kind of technical debt created by lack of understanding, expertise or insight. It could be a lack of requirements, lack of communication with peers and stakeholders, or just plain crummy engineering. All sizes and types of companies want to avoid this category of technical debt, but it is impossible to completely be free of it as we’re all human and make mistakes. The best way to prevent this kind of technical debt is strong communication and accounting between Product and Engineering, as well as on-going expertise development in each’s areas.</p>
+                <h3>Managed vs Unknown</h3>
+                <p><strong>The record of why and how we create technical debt, and the understanding of the impact, starts to fade almost immediately – without actively documenting & managing technical debt, it will slip out of our control.</strong></p>
+                <p>Managed technical debt is known, understood and documented. In the most ideal situation, we know what it would cost us as an organization to remedy the technical debt at any time. However, this level of understanding is very hard to hold on to as the “cost” of the technical debt continues to increase as we grow our application and create more complexity on top of the technical debt. One of the best investments in managing technical debt is documentation, though this is often the last priority in Product.</p>
+                <p>Unknown technical debt is a nightmare… we think… but we don’t know exactly, so 🤷🏻‍♂️. The axis of Managed vs Unknown is really a directional axis where items are inevitably moving from Managed towards Unknown, but never the other way. When we lose knowledge or control of technical debt, we can never get it back, it can only become more unknown. Unknown technical debt is exactly that, we don’t know what it effects, we don’t know how large it is, and we don’t know how to remedy it... exactly. We can remedy this technical debt, but we can’t plan that remediation or the cost, we just start working on it and we work on it until it’s gone.</p>
+                <h3>Matrix of Technical Debt</h3>
+                <p>The above axes help us understand the simple ways we may categorize technical debt, but all technical debt is actually a union of those axis and can be roughly placed in one of the quadrants created.</p>
+                <div class="image"><img src="/assets/img/articles/tech-debt-matrix.png"></div>
+                <h4>Strategic & Managed</h4>
+                <p>This is the most desirable kind of technical debt. It’s like a mortgage or a student loan. We are able to borrow against the future to create more value than it will eventually cost us, and we are tracking the cost of that debt and how to remedy it when we need to.</p>
+                <h4>Strategic & Unknown</h4>
+                <p>This is sort of “ok” sort of “not ok” technical debt. We created the debt by borrowing against our future, however we no longer know the cost, how to remedy the debt, or, possibly, why the debt was created. This really depends on the specific situation, in some cases it might be totally reasonable to ignore this debt for a period of time, in other cases you should prioritize getting rid of it.</p>
+                <h4>Impulsive & Managed</h4>
+                <p>While this technical debt is managed and understood, it’s still something we should get rid of as soon as we can, because it's not generating value but it’s costing us. Impulsive & Managed technical debt comes in a few forms, the most dangerous being a lack of understanding of business requirements, but the most common being avoidance of costly or complicated work. As it ages it will only cost us more and more and never create value. At best it slows down development of new work, at worst, it blocks new work entirely.</p>
+                <h4>Impulsive & Unkown</h4>
+                <p>I said I don’t like moral essentialism at the beginning… but this is bad. This is like getting drunk on margaritas while day drinking with your friend in Soho, buying a WAY overpriced, custom leather jacket from Schott because you thought it would make you look cool on Tinder, and then throwing the receipt off the Williamsburg Bridge on a dare a few hours later. That totally isn’t a personal story, just an example. This technical debt is lethal and can cause every kind of bad side effect there is. Additionally, it’s also the hairiest and hardest to remove. No one wants to dive into the East River to find a receipt.</p>
+                <h3>What does this mean for Product Management?</h3>
+                <p>Strategic technical debt is intentionally created by decisions driven by business needs, often planned and prioritized by Product Management. The only way to remediate existing technical debt properly and to continue managing new technical debt is to have a strong partnership in ownership of that technical debt between Product and their partners who implement the work, Engineering. Technical debt cannot be something we rely on Engineering to own alone as we create it together, and must own it together. We must build technical debt into our priorities as a Product Manager, and give Engineering the support they need to pay down the debt when it’s time.</p>
+                <p>Technical debt is not just a technical consideration. In a business that is built on technology, technical debt is as important as actual debt and funding – in both you are trading against your future. I've seen success and failure of a product hinge on the ability to understand how & when to leverage technical debt appropriately, but also how & when it must be paid down and remediated.</p>
+                <p>Technical Debt can be a powerful tool to wield as a business. And a Product Manager who can facilitate, account, and understand it will be vital to a successful product.</p>
+            </div>
+        </article>
+
+
+    </section>
+
+{% endblock %}
