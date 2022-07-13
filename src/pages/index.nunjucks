@@ -7,6 +7,7 @@
 {% block content %}
 
 	<section id="main">
+		<h1>Maximillian Kirchoff</h1>
 		<div id="about" class="item">
 			<h2><span class="highlighter">About</span></h2>
 			<p>

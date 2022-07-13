@@ -680,6 +680,10 @@ a:hover, a:visited, a:active {
   color: red;
 }
 
+section#main > h1 {
+  text-transform: uppercase;
+  font-size: 11vw;
+}
 section#main article .image.hero .credit {
   font-size: 1.5vw;
 }
@@ -833,6 +837,10 @@ footer {
   section#main {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  section#main > h1 {
+    text-transform: uppercase;
+    font-size: 4vw;
   }
   section#main article {
     padding: 0 200px;

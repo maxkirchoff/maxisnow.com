@@ -43,9 +43,8 @@
     <header>
      {% if pageID === 'home' %}
         <div class="img-wrapper">
-          <img src="/assets/img/max.jpg" />
+          <img src="/assets/img/max-kirchoff.jpg" />
         </div>
-        <h1>Maximillian Kirchoff</h1>
       {% else %}
         <h1><a href="/">Maximillian Kirchoff</a></h1>
       {% endif %}
