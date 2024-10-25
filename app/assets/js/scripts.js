@@ -4,7 +4,7 @@
  * 
  * @author Max Kirchoff
  * @version 1.0.0
- * Copyright 2022. MIT licensed.
+ * Copyright 2024. MIT licensed.
  */
 (function ($, window, document, undefined) {
 
