@@ -1,17 +1,14 @@
-<!-- index.nunjucks -->
-
-{% set pageID = 'home' %}
-
-{% extends "layout.nunjucks" %}
-
-{% block content %}
+---
+layout: layout.njk
+pageID: home
+---
 
 	<section id="main">
 		<h1>Maximillian Kirchoff</h1>
 		<div id="about" class="item">
 			<h2><span class="highlighter">About</span></h2>
 			<p>
-				I am a multidisciplinary technologist and creative. My expertise crosses many fields and domains as does my approach to understanding and critical thinking. I am deeply interested in emotional intelligence and our relationship to technology — and how it influences our ethics & the future of the human experience.
+				I am a multidisciplinary technologist. My expertise crosses many fields and domains. I am deeply interested in emotional intelligence, Philosophy of Mind, and our relationship to technology — both how it shapes and is shaped by the human experience.
 			</p>
 			<p>
 				I live in Duluth, GA with my wife, our two kids, and our dog.
@@ -22,8 +19,11 @@
 		</div>
 		<div id="articles" class="item">
 			<h2><span class="highlighter">Writing</span></h2>
+			
+			<h3>I currently publish my writings on AI, philosopy, and working in technology at <a href="https://www.humanoftheloop.com" target="_new">Human of the loop</a>.</h3>
+			
 			<p>
-				Below are some recent thoughts related to my work and expertise.
+				Other writings can be found below.
 			</p>
 			<div class="articles">
                 <div class="article">
@@ -47,25 +47,28 @@
 				<div class="article">
 					<h3><a href="https://www.certifid.com/article/the-future-of-fraud-prevention-is-human">The Future of Fraud Prevention is Human</a>
 					</h3>
-					<p>‍Humans are social beings by nature. Trusting one another is ingrained in our genetics; it’s how we’ve progressed as a species. Unfortunately, fraudsters know this.</p>
+					<p>‍Humans are social beings by nature. Trusting one another is ingrained in our genetics; it's how we've progressed as a species. Unfortunately, fraudsters know this.</p>
 					<p><a href="https://www.certifid.com/article/the-future-of-fraud-prevention-is-human">Read More</a></p>
 				</div>
 				<div class="article">
 					<h3><a href="/articles/product-management-technical-debt">Product Management & Technical Debt</a>
 					</h3>
-					<p>Technical debt is often a topic that can lead to debate and miscommunication as it’s generally misunderstood in many industries, especially in tech and the *tech subdivisions (fintech, insurtech, etc). Within computer science, there is plenty of writing on the topic of technical debt: how to classify it, how to measure it, how to avoid it, and how to pay it down. However, I want to present it as a concept for the whole business to consider.</p>
+					<p>Technical debt is often a topic that can lead to debate and miscommunication as it's generally misunderstood in many industries, especially in tech and the *tech subdivisions (fintech, insurtech, etc). Within computer science, there is plenty of writing on the topic of technical debt: how to classify it, how to measure it, how to avoid it, and how to pay it down. However, I want to present it as a concept for the whole business to consider.</p>
 					<p><a href="/articles/product-management-technical-debt">Read More</a></p>
 				</div>
 				<div class="article">
 					<h3><a href="/articles/quick-tips-early-stage-marketing">Quick tips for a consulting business on early stage marketing</a>
 					</h3>
-					<p>I occasionally get emails from folks who have found me or LAMA SIX who really just need some good advice. I’ll write them a quick email and try to save them time and money with actionable answers and ideas. This is one of those emails that I wanted to share, along with my responses for anyone who might be asking the same questions about their business right now.</p>
+					<p>I occasionally get emails from folks who have found me or LAMA SIX who really just need some good advice. I'll write them a quick email and try to save them time and money with actionable answers and ideas. This is one of those emails that I wanted to share, along with my responses for anyone who might be asking the same questions about their business right now.</p>
 					<p><a href="/articles/quick-tips-early-stage-marketing">Read More</a></p>
 				</div>
 			</div>
 		</div>
 		<div id="podcast" class="item">
 			<h2><span class="highlighter">Podcast</span></h2>
+			<p>
+				I recently hosted a podcast <a href="https://www.youtube.com/watch?v=AeA7PShEkD8" target="_new">episode for GOTO's Book Club on Sam Keen's Clean Architecture</a> in Python.
+			<p>
 			<p>
 				I launched a, now defunct, podcast with my creative partner, Isla Murray, called People Not Things as part of our search to find others who wanted to look at the people and relationships behind everything. You can find our podcast wherever you listen to podcasts or at <a href="http://peoplenotthings.party/" target="_blank">PeopleNotThings.party</a>.
 			</p>
@@ -79,11 +82,11 @@
 		<div id="work" class="item">
 			<h2><span class="highlighter">Career</span></h2>
 
-			<h3>CertifID</h3>
-			<p>I am currently the VP of Data & Risk <a href="https://www.certifid.com/" target="_blanl">CertifID</a>. We're building the next generation of data-rich fraud prevention software.</p>
+			<h3>Ginko Labs, Inc.</h3>
+			<p>I am currently the Founding Technologist & CTO at <a href="https://www.heyginko.com/" target="_blanl">Ginko</a>. We're building tools to help parents and kids combat the negative effects of technology, screen time, and the internet.</p>
+
+			<p>My resume can be found <a href="https://maxkirchoff.com/resume">here</a></p>
 
 		</div>
-		
-	</section>
 
-{% endblock %}
+	</section>
